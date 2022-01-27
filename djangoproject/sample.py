@@ -1,9 +1,7 @@
-def countDuplicate(numbers):
-    dup = []
-    for i in numbers:
-        if i not in dup and numbers.count(i) > 1:
-            dup.append(i)
-    return dup
+import os
 
-
-print(countDuplicate([1, 2, 2, 3, 3]))
+print(os.environ.get('EMAIL_USER'))
+print(os.environ.get('EMAIL_PASS'))
+print(os.environ.get('MY_KEY'))
+print(os.environ.get('DEBUG_VALUE'))
+print(os.environ.get('AWS_STORAGE_BUCKET_NAME'))
